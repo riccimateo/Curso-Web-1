@@ -1,0 +1,70 @@
+<html>
+    <head>
+         <title>Curso Web 1</title>
+         <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+
+
+    <nav class="barra-navegacion" id="navegacion">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobremi">Sobre Mi</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#" onclick="mostrarMenu()" class="icono">---</a>
+    </nav>
+    
+    <div class="seccion-hero" id="inicio">
+        <div class="texto-hero">
+            <h1 class="titulo-hero">Mateo Ricci</h1>
+            <p class="descripcion-hero">Programador / Analista Funcional</p>
+            <a href="#contacto" class="boton-contacto">Contacto</a>
+        </div>
+    </div>  
+
+    <div class="sobre-mi" id="sobremi">
+        <h1 class="titulo-sobremi">Sobre Mi</h1>
+        <div class="fila">
+            <div class="columna columna-imagen">
+                <div class="contenedor-imagen">
+                    <img src="img/sobre-mi.jpg" alt="Foto de Mateo Ricci" class="imagen-sobremi">
+                </div>
+            </div>
+            <div class="columna">
+                <p class="subtitulo-sobremi" >💻Programador / Analista Funcional</p>
+                <p> Actualmente trabajo en una empresa como Analista Funcional, relevando necesidades de los clientes, instalando el sistema de gestion y haciendo seguimiento de proyectos </p>
+                <p> Tambien hago trabajos Freelance, y de a poco quiero escribir cursos para enseñar a la gente algo de todo este mundo </p>
+                <p>La verdad es que no tengo mucho como para describirme, asi que voy a dejarles un pedazo de curso dentro del curso para completar este texto
+                    y que quede decente.
+                </p>
+                <p>Recuerden que la idea es que vayan haciendo modificaciones a medida que van avanzando, por ejemplo los colores que yo elegi son para un tema
+                    "oscuro". Podrian reemplazar todo lo negro por blanco y todo lo blanco por negro. De hecho quizas, el proximo curso podria ser esta misma Web
+                    pero agregando un boton para pasar de tema oscuro a tema claro.
+                </p>
+                <p>Si leyeron todo esto y quieren que les enseñe como usar tema claro y tema oscuro en la misma Web, avisenme por Instagram, saludos</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contacto" id="contacto">
+        <h1 class="titulo-sobremi">Contacto</h1>
+        <form class="formulario-contacto">
+            <input type="text" placeholder="Nombre" class="input-contacto">
+            <input type="email" placeholder="Email" class="input-contacto">
+            <textarea placeholder="Mensaje" class="input-contacto" rows="15"></textarea>
+            <input type="submit" value="Enviar" class="boton-contacto">
+        </form>
+    </div>
+
+    <div class="footer">
+        <div class="footer-texto">
+            <p>Desarrollado por <a href="https://www.instagram.com/riccimateov" class="footer-link negrita">Ricci Code</a> - 2022</p>
+        </div>
+        <div class="footer-top">
+            <p><a class="footer-link negrita" href="#navegacion">Volver Arriba</a></p>
+        </div>
+    </div>
+
+        <script src="js/funciones.js"></script>
+    </body>
+</html>

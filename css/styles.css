@@ -1,0 +1,292 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+   /*  COMIENZO DE ESTILOS DE BARRA DE NAVEGACION  */
+.barra-navegacion 
+{
+    overflow: hidden;
+    background-color: #0c0c0c; /*Color personalizado */
+}
+.barra-navegacion a {
+    float: left; /* Se colocan los elementos <a> a la izquierda */
+    display: block; /* Se muestran en forma de bloque */
+    color: #fff; /* El color del texto sera blanco */
+    text-align: center; /* La alineacion del texto dentro de cada bloque sera centrada */
+    padding: 25px 16px; /* Entre el texto y el borde del bloque se dejan 25px en lo vertical y 16 px en lo horizontal */
+    text-decoration: none; /* Se quita la decoracion del texto, en este caso el subrayado */
+    text-transform: uppercase; /* /Se hace que todo el texto sea mayusculas */
+    font-weight: bold; /* Texto en negrita */
+    font-size: 17px; /* Fuente de 17px */
+  }
+
+.barra-navegacion .icono
+{
+    display: none; /* Se oculta el icono que utilizaremos para mostrar u ocultar el menu en dispositivos mas pequeños */
+}
+
+  @media screen and (max-width: 600px) { /* Si el ancho de la pantalla es menor a 600px */
+    .barra-navegacion a {
+      display: none; /* Se oculta el menu en dispositivos mas pequeños */
+    }
+    .barra-navegacion a.icono {
+      float: right; /* Se coloca el icono a la derecha */
+      display: block; /* Se muestra el icono */
+    }
+  }
+
+  @media screen and (max-width: 600px) {  /* Si el ancho de la pantalla es menor a 600px */
+    .barra-navegacion.responsive { 
+        position: relative;  
+    }
+    .barra-navegacion.responsive .icono {
+      position: absolute;   
+      right: 0;     /* Se coloca el icono a la derecha */
+      top: 0;      /* Se coloca el icono en la parte superior  */
+    }
+    .barra-navegacion.responsive a { 
+        float: none; /* Se elimina el efecto flotante del menu */
+        display: block; /* Se muestra el menu en forma de bloque */
+        text-align: left; /* Se alinea el texto a la izquierda */
+    }
+  }
+      
+   /*  FIN DE ESTILOS DE BARRA DE NAVEGACION  */
+
+
+
+
+
+    /*  COMIENZO DE ESTILOS DE SECCION HERO */
+
+.seccion-hero{
+      
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero.jpg"); /* Se coloca una imagen de fondo, con un gradient para que se vea disfuminada*/
+    height:75%; /* Se establece el alto de la imagen de fondo */
+    background-position: center; /* Se coloca la imagen de fondo en el centro de la pantalla */
+    background-repeat: no-repeat; /* Se desactiva la repeticion del fondo. */
+    background-size: cover; /* Se ajusta el tamaño de la imagen de fondo */
+    position: relative;  
+    overflow: auto; /* Se corrige un pequeno espacio en blanco por arriba de la imagen */
+}
+.texto-hero {
+    text-align: center; /* Se alinea el texto al centro */ 
+    position: absolute;   
+    top: 40%;  /* Se coloca el texto en el 40% del contenedor de arriba hacia abajo */
+    left: 50%; /* Se coloca el texto en el 50% del contenedor de forma horizontal */
+    transform: translate(-50%, -50%); /* Se coloca el texto en el centro de la pantalla */
+    color: white; /* El color del texto sera blanco */
+}
+.titulo-hero {
+    font-size: 4rem; /* Se establece el tamaño de la fuente */
+    font-weight: bold; /* Texto en negrita */
+    color: white; /* Color personalizado */
+}
+.descripcion-hero {
+    font-style: italic; /* Se hace que el texto sea cursiva */
+    padding-bottom:30px; /* Se añade un espacio vacio debajo del texto */ 
+} 
+.boton-contacto
+{
+    color:#0c0c0c; /* Color personalizado para el texto del boton*/
+    background-color: #fff; /* Color personalizado para el fondo del boton*/
+    border-radius: 20px; /* Redondeado del boton */
+    padding: 12px 40px; /* Espacio entre el texto y el borde del boton */
+    text-decoration: none; /* Se quita la decoracion del texto, en este caso el subrayado */
+    font-weight: bold; /* Texto en negrita */
+    text-transform: uppercase; /* /Se hace que todo el texto sea mayusculas */
+    border: none;
+}
+    /*  FIN DE ESTILOS DE SECCION HERO */
+
+
+
+    /*  COMIENZO DE ESTILOS DE SECCION SOBRE MI */
+.sobre-mi
+{
+    background-color: #0c0c0c; /* Color personalizado para el fondo */
+    overflow: hidden; 
+    text-align: center; /* Se alinea el texto al centro */
+    padding-top: 40px;  /* Se añade un espacio vacio arriba del texto */
+    padding-bottom: 100px; /* Se añade un espacio vacio debajo del texto */
+}
+     
+.titulo-sobremi
+{
+    font-size: 2rem; /* Se establece el tamaño de la fuente */
+    font-weight: bold;  /* Texto en negrita */ 
+    color: white;  
+    padding-bottom: 30px; /* Se añade un espacio vacio debajo del texto */
+}
+.subtitulo-sobremi
+{
+    font-size: 1.5rem; /* Se establece el tamaño de la fuente */ 
+    font-weight: bold; /* Texto en negrita */ 
+    color: white;  
+    padding-top:0px; 
+    margin: 0; 
+ 
+}
+.contenedor-imagen
+{
+    padding-right:150px; /* Se añade un espacio vacio a la derecha del contenedor */
+}	
+.imagen-sobremi
+{ 
+    border-radius: 8px; /* Redondeado de la imagen */
+    max-width: 350px; /* Ancho maximo de la imagen */
+  
+}
+.columna {
+    float: left;  /* Se coloca la columna a la izquierda */
+    width: 50%; /* Ancho de la columna */
+  }
+.columna-imagen
+  {
+    text-align: right; /* Se alinea el texto a la derecha */ 
+  }
+ .columna p{
+     text-align: left; /* Se alinea el texto a la izquierda */
+     padding-left: 35px; /* Se añade un espacio vacio a la izquierda del texto */
+     color: white;
+     padding-right:300px; /* Se añade un espacio vacio a la derecha del texto */
+ }
+.fila
+{
+    justify-content: center; /* Se centra el contenido de la fila */
+}
+.fila:after {
+    padding:20px 40px;  
+    content: "";  
+    display: table; 
+    clear: both; 
+}
+
+@media screen and (max-width: 1500px) { /* Si la pantalla es menor a 1500px */
+  
+    .columna p{
+ 
+     padding-left: 35px;   
+     padding-right:100px;
+    }
+}
+ 
+@media screen and (max-width: 1068px) { /* Si la pantalla es menor a 1068px */
+    .contenedor-imagen 
+    {
+        padding-right:50px;
+    }
+}
+ 
+
+@media screen and (max-width:  768px ) { /* Si la pantalla es menor a 768px */
+    .columna {
+        width: 100%;
+    }
+    .columna p{
+        text-align: center;
+        padding: 15px;
+    }
+    .columna-imagen
+    {
+        text-align: center;
+    }
+    .imagen-sobremi
+    {
+        padding-right: 0px;
+    }
+    .contenedor-imagen
+    {
+        padding: 10px;
+    }
+}
+    
+/*  FIN DE ESTILOS DE SECCION SOBRE MI */
+
+/* COMIENZO DE ESTILOS DE SECCION CONTACTO */
+
+.contacto
+{
+    background-color: #0f0f0f; /* Color personalizado para el fondo */
+    overflow: hidden; 
+    text-align: center; /* Se alinea el texto al centro */
+    padding-top: 40px;  /* Se añade un espacio vacio arriba del texto */
+    padding-bottom: 150px; /* Se añade un espacio vacio debajo del texto */
+}
+.texto-centro
+{
+    text-align: center; /* Se alinea el texto al centro */ 
+    color: white; /* El color del texto sera blanco */
+}
+
+.formulario-contacto
+{
+    margin:auto; /* Se centra el formulario */
+    max-width: 650px; /* Ancho maximo del formulario */
+    padding: 0px 20px; /* Espacio entre el borde del formulario y el texto */
+}
+
+.input-contacto
+{
+    display: block;
+    width: 100%; /* Ancho del input */
+    margin:16px 0px; /* Espacio entre los inputs */
+    background-color: #0c0c0c; /* Color personalizado para el fondo del input */
+    padding:20px 40px; /* Espacio entre el texto y el borde del input */
+    border: none; /* Se quita el borde del input */ 
+    color:white; /* El color del texto sera blanco */
+}
+
+.input-contacto:focus
+{
+    outline: none; /* Se quita el borde del input */
+}
+
+textarea
+{
+    resize: none; /* Se deshabilita la posibilidad de cambiar el tamaño del textarea */
+}
+
+/*  FIN DE ESTILOS DE SECCION CONTACTO */
+
+/* COMIENZO DE ESTILOS DE SECCION FOOTER */
+
+
+.footer
+{
+    background-color: #0c0c0c; /* Color personalizado para el fondo */
+    overflow: hidden; 
+    padding: 20px 0px;  /* Se añade un espacio vacio arriba del texto */ 
+    color: white;
+}
+
+.footer-texto
+{
+    float: left;
+    width:50%;
+    text-align: center; /* Se alinea el texto al centro */
+    
+}
+
+.footer-top
+{
+    float: right;
+    width:50%;
+    text-align: center; /* Se alinea el texto al centro */
+}
+
+
+ 
+.footer-link
+{
+    text-decoration: none;
+    color: white;
+}
+
+.negrita
+{
+    font-weight: bold;
+}
+
+/*  FIN DE ESTILOS DE SECCION FOOTER */
